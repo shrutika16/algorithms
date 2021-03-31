@@ -1,10 +1,10 @@
 <?php
 
 function binarySearch($arr , $l, $x, $r){
-
+  
     if($r >= $l){
         $mid = ceil($l + ($r - $l) / 2); 
-
+        print_r($arr[$mid]);
         // If the element is present in the middle
         if ($arr[$mid] == $x) {
             return floor($mid); 
